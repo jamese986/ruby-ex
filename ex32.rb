@@ -43,3 +43,6 @@ puts fruits[0..2]
 # using the 3 dot method to exclude the last value
 puts "Now using 3 dot method range to exclude last element"
 puts fruits[0...2]
+
+# 2 dimensional arrays
+[[1,2,3],[4,5,6]]
