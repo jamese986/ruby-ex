@@ -2,6 +2,8 @@ def gold_room
   puts "This room is full of gold. How much do you take?"
 
   print"> "
+  # assigns the function of stdin.gets.chomp to choice
+  # this takes in user input the .chomp removes the break from the user input
   choice = $stdin.gets.chomp
 
   # this line has a bug, so fix it
@@ -13,6 +15,7 @@ def gold_room
 
   if how_much <50
       puts "Nice, you're not greedy, you wind!"
+      # exit(0)  this exit status means the code executed without any errors code with errors would retun exit(1)
       exit(0)
     else
       dead("You greedy bastard!")
@@ -64,10 +67,13 @@ def cthulhu_room
   end
 end
 
+# Defining a method called dead that can take in a single argument in this instance (why)
 def dead(why)
   puts why, "Good job!"
+  # exit(0)  this exit status means the code executed without any errors code with errors would retun exit(1)
   exit(0)
 end
+# end tag tells ruby that the method is finished
 
 def start
   puts "You are in a dark room."
